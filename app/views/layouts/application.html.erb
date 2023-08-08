@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div id="modal" class="bg-gray-700 bg-opacity-50 w-screen h-screen absolute bg-transparent z-10 opacity-0 hidden"></div>
+    <%= render 'shared/navbar'%>
     <%= yield %>
   </body>
 </html>
