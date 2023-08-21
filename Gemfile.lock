@@ -85,6 +85,8 @@ GEM
       sassc (~> 2.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    heroicon (1.0.0)
+      rails (>= 5.2)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.2.1)
@@ -234,6 +236,7 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   font-awesome-sass
+  heroicon
   importmap-rails (~> 1.1)
   jbuilder (~> 2.7)
   listen (~> 3.3)

@@ -12,7 +12,12 @@
   </head>
 
   <body>
-    <div id="modal" class="bg-gray-700 bg-opacity-50 w-screen h-screen absolute bg-transparent z-10 opacity-0 hidden"></div>
+    <div
+     id="modal"
+     class="bg-gray-700 bg-opacity-50 w-screen h-screen fixed transition-all duration-300"
+     data-controller="modal"
+     data-action="click->modal#closeModal">
+     <%= render 'shared/sidebar'%></div>
     <%= render 'shared/navbar'%>
     <%= yield %>
   </body>
