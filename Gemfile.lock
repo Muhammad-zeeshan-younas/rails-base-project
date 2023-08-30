@@ -196,6 +196,8 @@ GEM
     sqlite3 (1.6.3-x86_64-linux)
     stimulus-rails (1.2.2)
       railties (>= 6.0.0)
+    swiper-rails (1.0.4)
+      rails (>= 3.1)
     tailwindcss-rails (2.0.30-x86_64-linux)
       railties (>= 6.0.0)
     thor (1.2.2)
@@ -248,6 +250,7 @@ DEPENDENCIES
   spring
   sqlite3 (~> 1.4)
   stimulus-rails (~> 1.2)
+  swiper-rails
   tailwindcss-rails (~> 2.0)
   turbolinks (~> 5)
   tzinfo-data

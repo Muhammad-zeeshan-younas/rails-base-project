@@ -1,35 +1,20 @@
-<!-- app/views/dashboard/index.html.erb -->
-
-<div class="container">
-  <h1>Dashboard</h1>
-
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Total Orders</h5>
-          <p class="card-text"><%= @total_orders %></p>
-        </div>
-      </div>
+<div class="container mx-auto max-w-7xl overflow-hidden mt-4 px-4">
+  <div id="default-carousel" class="relative w-full" data-carousel="slide" data-controller="carousel">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-xl md:h-96">
+     <%= render partial: "shared/carousel_item", locals: { images: [
+      "design.jpg",
+      "design1.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUzhQoLUDleP66xdm2uidyAeXnnMAR2URww&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6cHdAU0wonFYdEggwF1kMA_dOuVEKpIZWew&usqp=CAU"
+    ] } %> 
     </div>
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Total Revenue</h5>
-          <p class="card-text"><%= number_to_currency(@total_revenue) %></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Total Customers</h5>
-          <p class="card-text"><%= @total_customers %></p>
-        </div>
-      </div>
-    </div>
+    <!-- Slider indicators -->
+     <%= render partial: "shared/carousel_controls", locals: { images: [
+    "https://waifuclub.com/cdn/shop/products/Rias3.jpg?v=1643561433",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJuR7irg-NgAfEP3Ptju6FELm0E7fXZ_rD3w&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUzhQoLUDleP66xdm2uidyAeXnnMAR2URww&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6cHdAU0wonFYdEggwF1kMA_dOuVEKpIZWew&usqp=CAU"
+  ] } %>
   </div>
-
-  <!-- Add other dashboard components here -->
-
 </div>
